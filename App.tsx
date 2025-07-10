@@ -1,12 +1,9 @@
-import Stars from "./components/Stars";
-import "./App.css"
+import "./App.css";
+import Listing from "./components/Listing";
+import { data } from "./data/data";
 
 function App() {
-  return (
-    <div>
-      <Stars count={3} />
-    </div>
-  );
+  return <Listing items={data} />;
 }
 
 export default App;
